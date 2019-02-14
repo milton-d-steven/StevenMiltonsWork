@@ -1,0 +1,52 @@
+@import 'partials/prefix-mixins';
+@import 'partials/_layout'; // responsive grid and media queries
+
+// color palette - these colors will be the color swatches of the Colors section
+
+@import 'partials/_color';
+
+// fonts
+
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Original Surfer', cursive;
+
+
+/* --------------------------------
+
+xBackground
+
+-------------------------------- */
+
+body {
+	/* this is the page background */
+	background-color: ;
+}
+
+
+/* --------------------------------
+
+xNavigation
+
+-------------------------------- */
+
+@import 'partials/_navigation';
+
+
+/* --------------------------------
+
+xTypography
+
+-------------------------------- */
+
+@import 'partials/_typography';
+
+/* --------------------------------
+
+xBasic Style
+
+-------------------------------- */
+
+@import 'partials/_basic-style';
+@import 'partials/_header'
+@import 'partials/_middivs';
+@import 'partials/_footer'

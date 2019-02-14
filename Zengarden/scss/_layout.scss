@@ -1,0 +1,18 @@
+//Layout Variables
+$maxcol: 8;
+$maxrow: 50;
+
+// breakpoints
+$M:     768px; //mobile version
+$D:     1024px; //desktop version
+
+
+// media queries
+@mixin MQ($canvas) {
+  @if $canvas == M {
+   @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == D {
+   @media only screen and (min-width: $D) { @content; }
+  }
+}

@@ -1,0 +1,427 @@
+// Variables
+$left-margin: 10px;
+$right-margin: 10px;
+.page-wrapper {
+  // background-image: linear-gradient(to bottom, $color-3, $color-1);
+}
+.main {
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, $color-5 0%,$color-3 100%,);
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(8, auto);
+}
+//
+//Desktop view
+//
+@media screen and (min-width: $M) {
+  /* specific divs */
+  #zen-preamble {
+    box-sizing: border-box;
+    grid-row: 3;
+    grid-column: 1 / span 8;
+    margin: 0;
+    width: 100%;
+    color: $color-3;
+    background-color: #135589;
+    position: relative;
+  }
+  #zen-preamble::before {
+    position: absolute;
+    content: '';
+    top: -30px;
+    left: 5px;
+    height: 70px;
+    width: 100%;
+    background-size: 120px 130px;
+    background-position: -5px -3px;
+    background-image: -webkit-radial-gradient(50% 0%, circle, #edfafd 50%, transparent 50%);
+    background-image: -moz-radial-gradient(50% 0%, circle, #edfafd 50%, transparent 50%);
+    background-image: radial-gradient(circle at 50% 0%,  #edfafd 50%, transparent 50%);
+    // Diana
+    animation: wave 3s ease-in-out forwards infinite;
+  }
+  //diana added this too
+  @keyframes wave {
+    0%,100%{transform: translate(25px, 5px);}
+    50%{transform: translate(10px, 0px)}
+  }
+  #zen-preamble::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-image: url("./icons/boat.svg");
+    background-repeat: no-repeat;
+    top: -150px;
+    left: -3px;
+    //diana
+    animation: swing 4s ease-in-out forwards infinite;
+    transform-origin: bottom;
+  }
+  @keyframes swing {
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(5deg);}
+  }
+  #zen-preamble h3 {
+    text-align: center;
+    padding: 20px 10px 0px 18px;
+    color: $color-3;
+  }
+  .preamble p:nth-child(2) {
+    padding: 5px 20px 0px 15px;
+  }
+  .preamble p:nth-child(3) {
+    padding: 5px 20px 0px 15px;
+  }
+  .preamble p:nth-child(4) {
+    padding: 5px 20px 10px 15px;
+  }
+  #zen-explanation {
+    box-sizing: border-box;
+    grid-row: 4 / span 10;
+    grid-column: 1;
+    grid-column-end: span 2;
+    // border: 3px solid green;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: $left-margin;
+    margin-right: $right-margin;
+    background-color: hsla(180, 60%, 95%, .5);
+  }
+  .explanation h3 {
+    text-align: center;
+  }
+  #zen-participation {
+    box-sizing: border-box;
+    grid-row-start: 4;
+    grid-row-end: span 9;
+    grid-column: 3;
+    grid-column-end: span 2;
+    // border: 3px solid green;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: $left-margin;
+    margin-right: $right-margin;
+    background-color: hsla(180, 60%, 95%, .5);
+  }
+  .participation h3 {
+    text-align: center;
+  }
+  #zen-requirements {
+    box-sizing: border-box;
+    grid-row-start: 4;
+    grid-row-end: span 15;
+    grid-column: 6;
+    grid-column-end: span 2;
+    // border: 3px solid green;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: $left-margin;
+    margin-right: $right-margin;
+    background-color: hsla(180, 60%, 95%, .5);
+  }
+  .requirements h3 {
+    text-align: center;
+  }
+  #zen-benefits {
+    box-sizing:border-box;
+    grid-row-start: 14;
+    grid-row-end: span 5;
+    grid-column: 1;
+    grid-column-end: span 2;
+    // border: 3px solid green;
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: $left-margin;
+    margin-right: $right-margin;
+    margin-top: 20px;
+    background-color: hsla(180, 60%, 95%, .5);
+  }
+  .benefits h3 {
+    text-align: center;
+  }
+  //diana
+  .requirements, .benefits{
+    z-index: 3;
+  }//to here.
+  footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    grid-row: 19;
+    grid-column: 1 / span 8;
+    position: relative;
+    padding: 10px;
+    margin: 200px 0 0 0;
+    background-color: $color-8;
+    z-index:1;
+  }
+  footer::before {
+    background-color: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    z-index: -1;
+  }
+  footer::before {
+    top: 0;
+    -webkit-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  footer::after {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 250px;
+    background-image: url("./icons/fish-02.svg");
+    background-repeat: no-repeat;
+    top: -400px;
+    //diana
+    animation: sidetoside 25s linear infinite;
+  }
+  //diana
+  @keyframes sidetoside {
+    0% {
+
+      transform:rotate(-2deg) translate(600px, 0px);
+    }
+
+    10%{
+      transform:rotate(2deg) translate(550px, 0px);
+    }
+    20%{
+      transform:rotate(-2deg) translate(500px, 0px);
+    }
+    30%{
+      transform:rotate(2deg) translate(450px, 0px);
+    }
+    40%{
+      transform:rotate(-2deg) translate(400px, 0px);
+    }
+    50%{
+      transform:rotate(2deg) translate(350px, 0px);
+    }
+    60%{
+      transform:rotate(-2deg) translate(300px, 0px);
+    }
+    70%{
+      transform:rotate(2deg) translate(250px, 0px);
+    }
+    80%{
+      transform:rotate(-2deg) translate(100px, 0px);
+    }
+    90%{
+      transform:rotate(2deg) translate(50px, 0px);
+    }
+    100% {
+      width: 110%;
+      transform:rotate(-5deg) translate(-100px, 0px);
+    }
+  }
+  // to here.
+}
+//
+//mobile View
+//
+@media screen and (max-width: $M) {
+  #zen-preamble {
+    position: relative;
+    box-sizing: border-box;
+    grid-row: 3;
+    grid-column: 1 / span 8;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+    background-color: $color-5;
+    color: $color-2;
+  }
+  #zen-preamble::before {
+    position: absolute;
+    content: '';
+    top: -40px;
+    height: 70px;
+    width: 100%;
+    background-size: 80px 120px;
+    background-position: -5px -3px;
+    background-image: -webkit-radial-gradient(50% 0%, circle, #edfafd 50%, transparent 50%);
+    background-image: -moz-radial-gradient(50% 0%, circle, #edfafd 50%, transparent 50%);
+    background-image: radial-gradient(circle at 50% 0%, #edfafd 50%, transparent 50%);
+  }
+  #zen-preamble h3 {
+    text-align: center;
+    // background-color: $color-5;
+    color: $color-8;
+    margin: 20px 15% 0% 15%;
+    border-radius: 30px 30px 0 0;
+    background-color: hsla(180, 60%, 95%, .2);
+  }
+  .preamble p, .explanation p, .participation p, .benefits p, .requirements p{
+    background-color: hsla(180, 60%, 95%, .2);
+  }
+  // background-color: $color-4;
+  .preamble p:nth-child(2) {
+    border-radius: 30px 30px 0 0;
+    padding: 15px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .preamble p:nth-child(3) {
+    // background-color: $color-4;
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .preamble p:nth-child(4) {
+    // background-color: $color-4;
+    padding: 5px 20px 15px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 0 0 30px 30px;
+  }
+  #zen-explanation {
+    box-sizing: border-box;
+    grid-row: 4;
+    grid-column: 1 / span 8;
+    margin: auto;
+    width: 100%;
+    padding: 5em 0 5em 0;
+    color: $color-2;
+  }
+  .explanation h3 {
+    text-align: center;
+    // background-color: $color-5;
+    color: darken($color-8, 3%);
+    margin: 20px 15% 0% 15%;
+    border-radius: 30px 30px 0 0;
+    background-color: hsla(180, 60%, 95%, .2);
+  }
+  .explanation p:nth-child(2) {
+    // background-color: $color-;
+    padding: 15px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 30px 30px 0 0;
+  }
+  .explanation p:nth-child(3) {
+    // background-color: $color-4;
+    padding: 5px 20px 15px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 0 0 30px 30px;
+  }
+  #zen-participation {
+    box-sizing: border-box;
+    grid-row: 5;
+    grid-column: 1 / span 8;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+    // background-color: hsla(180, 60%, 95%, .5);
+    color: $color-2;
+  }
+  .participation h3 {
+    text-align: center;
+    color: darken($color-8, 5%);
+    margin: 20px 15% 0% 15%;
+    border-radius: 30px 30px 0 0;
+    background-color: hsla(180, 60%, 95%, .2);
+  }
+  .participation p:nth-child(2) {
+    padding: 15px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 30px 30px 0 0;
+  }
+  .participation p:nth-child(3) {
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .participation p:nth-child(4) {
+    padding: 5px 20px 15px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 0 0 30px 30px;
+  }
+  #zen-requirements {
+    box-sizing: border-box;
+    grid-row: 6;
+    grid-column: 1 / span 8;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+    color: $color-1;
+  }
+  .requirements h3 {
+    text-align: center;
+    color: darken($color-8, 8%);
+    margin: 20px 15% 0% 15%;
+    border-radius: 30px 30px 0 0;
+    background-color: hsla(180, 60%, 95%, .2);
+    border-radius: 30px 30px 0 0;
+  }
+  .requirements p:nth-child(2) {
+    padding: 15px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 30px 30px 0 0;
+  }
+  .requirements p:nth-child(3) {
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .requirements p:nth-child(4) {
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .requirements p:nth-child(5) {
+    padding: 5px 20px 5px 20px;
+    margin: 0% 5% 0% 5%;
+  }
+  .requirements p:nth-child(6) {
+    padding: 5px 20px 15px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 0 0 30px 30px;
+  }
+  #zen-benefits {
+    box-sizing: border-box;
+    grid-row: 7;
+    grid-column: 1 / span 8;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    margin-top: 30px;
+    color: $color-1;
+  }
+  .benefits h3 {
+    text-align: center;
+    color: darken($color-8, 10%);
+    margin: 20px 15% 0% 15%;
+    border-radius: 30px 30px 0 0;
+    background-color: hsla(180, 60%, 95%, .2);
+    border-radius: 30px 30px 0 0;
+  }
+  .benefits p:nth-child(2) {
+    padding: 15px 20px 15px 20px;
+    margin: 0% 5% 0% 5%;
+    border-radius: 30px 30px 30px 30px;
+  }
+  footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    grid-row: 8;
+    grid-column: 1 / span 8;
+    padding: 10px;
+    margin: 5px 0 0 ;
+    background-color: $color-8;
+  }
+  //transparent h1 and h2
+  h2 abbr{
+    color:transparent;
+  }
+  header h1{
+    color: transparent;
+  }
+}

@@ -1,0 +1,214 @@
+h2 abbr{
+    color: transparent;
+}
+footer {
+    flex-flow: row wrap;
+    a{
+    width: 100px;
+    height: 100px;
+    background-image: url("./icons/seashell.svg");
+    background-repeat: no-repeat;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a:hover{
+        transform-origin: 50% 50%;
+        animation: 1s main 1;
+    }
+}
+//shell animation
+@keyframes main {
+  0% {
+    transform: rotate(35deg);
+  }
+  25% {
+    transform: rotate(-35deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+// KITE ICON
+@keyframes moveKite {
+    0%{
+        transform: translate(0px, 0px);
+    }
+
+    10%{
+        transform: translate(20px, -15px);
+    }
+    20% {
+        transform: translate(5px, -10px);
+    }
+   30%{
+     transform: translate(80px, -80px);
+   }
+   40% {
+        transform: translate(5px, -10px);
+    }
+   50% {
+        transform: translate(-95px, -40px);
+    }
+   60%{
+     transform: translate(-20px, -5px);
+   }
+   70%{
+     transform: translate(10px, 15px);
+   }
+   80%{
+     transform: translate(10px, 15px);
+   }
+   90%{
+     transform: translate(10px, 15px);
+   }
+    100% {
+        transform: translate(0px, 0px);
+
+    }
+
+}
+
+
+//BOAT ICON
+//.extra2{
+//    width: 200px;
+//    height: 200px;
+//    background-image: url("./icons/boat.svg");
+//    background-repeat: no-repeat;
+//    margin-top: -1100px;
+//    margin-left: 1200px;
+//
+//}
+
+//WHITE CLOUD ICON
+header h1{
+    width: 800px;
+    height: 300px;
+    background-image: url("./icons/cloud.svg");
+    background-repeat: no-repeat;
+//    margin-top: -1660px;
+//    margin-left: -150px;
+    filter: drop-shadow(0 0 8px #C7C7C7);
+}
+//BLUE CLOUD ICON
+header h2{
+    width: 1300px;
+    height: 500px;
+    background-image: url("./icons/cloud-2.svg");
+    background-repeat: no-repeat;
+}
+
+////animation
+////animation
+// ANIMATION ON WHITE CLOUD
+
+header h1{
+  animation: whitecloud 15s linear infinite;
+  margin-top: 10px;
+}
+
+@keyframes whitecloud {
+  0% { transform: translate(0,0); }
+  30%{ transform: translate(-30px,0); }
+  60%{ transform: translate(200px,0); }
+  100%{transform: translate(0,0); }
+}
+
+// ANIMATION ON BLUE CLOUD
+header h2{
+  animation: bluecloud 15s linear infinite;
+  margin-top: -200px;
+}
+@keyframes bluecloud {
+  0% { transform: translate(0,0); }
+  10%{ transform: translate(100px,0); }
+  60%{ transform: translate(-50px,0); }
+  100%{transform: translate(0,0); }
+}
+
+//animation only not on small screen
+@media screen and (min-width: $M) {
+  //RED FISH ICON
+//  .extra3{
+//    width: 300px;
+//    height: 250px;
+//    background-image: url("./icons/fish-02.svg");
+//    background-repeat: no-repeat;
+//    margin-top: 700px;
+//    margin-left: 700px;
+//  }
+  //Yellow FISH ICON
+  .extra1{
+    width: 200px;
+    height: 200px;
+    background-image: url("./icons/fish-01.svg");
+    background-repeat: no-repeat;
+    margin-top: -775px;
+    margin-left: 400px;
+    animation: swim 7s ease-in-out infinite;
+
+  }
+
+  @keyframes swim {
+    0% {
+      transform: translate3d(0, 0, 0) rotateY(0);
+    }
+    15% {
+      transform: translate3d(1.75rem, -.1rem, 0) rotateY(0);
+    }
+    30% {
+      transform: translate3d(2.8rem, 0, 0) rotateY(0);
+    }
+    35% {
+      transform: translate3d(2.8rem, 0, 0) rotateY(180deg);
+    }
+    50% {
+      transform: translate3d(2rem, 0, 0) rotateY(180deg);
+    }
+    70% {
+      transform: translate3d(1.8rem, 0, 0) rotateY(180deg);
+    }
+    80% {
+      transform: translate3d(.8rem, 0, 0) rotateY(180deg);
+    }
+    90% {
+      transform: translate3d(-.5rem, 0, 0) rotateY(180deg);
+    }
+    94% {
+      transform: translate3d(-.5rem, 0, 0) rotateY(0);
+    }
+  }
+}
+//animation on small screen
+@media screen and (max-width: $M) {
+  header h1{
+    width: 300px;
+  }
+
+  @keyframes whitecloud {
+    0% { transform: translate(0,0); }
+    30%{ transform: translate(-10px,0); }
+    60%{ transform: translate(50px,0); }
+    100%{transform: translate(0,0); }
+  }
+  header h2{
+    width: 380px;
+  }
+  @keyframes bluecloud {
+    0% { transform: translate(0,0); }
+    10%{ transform: translate(30px,0); }
+    60%{ transform: translate(-10px,0); }
+    100%{transform: translate(0,0); }
+  }
+}

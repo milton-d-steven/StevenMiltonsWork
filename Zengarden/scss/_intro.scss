@@ -1,0 +1,149 @@
+//Grid for top section*/
+
+.intro {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(5, auto);
+    background-color: $color-1;
+}
+
+//
+//code for mobile view
+//
+@media screen and (max-width: $M) {
+    #zen-intro header {
+        grid-column-start: 2;
+        grid-column-end: span 8;
+        // background-color: $color-2;
+        // border: 3px solid purple;
+        // border-radius: 10px;
+    }
+  // Kite //
+  #zen-intro header::before {
+    content: '';
+    width: 200px;
+    height: 250px;
+    background-image: url("./icons/kite.svg");
+    background-repeat: no-repeat;
+    //animation: moveKite 10s ease-in-out infinite;
+    transform-origin: 60% bottom;
+    position: absolute;
+    top: 220px;
+    left: -10px;
+  }
+
+    header h1 {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        // border: 3px solid purple;
+        // border-radius: 10px;
+        // background-color: $color-7;
+        color: transparent;
+    }
+
+    header h2 {
+        grid-column: span 1/8;
+        // border: 3px solid purple;
+        // border-radius: 10px;
+        // // background-color: $color-3;
+        // background-color: hsla(180,50%,50%,.3);
+//        text-align: middle;
+        color: transparent;
+    }
+
+    #zen-summary {
+        grid-column-start: 2;
+        grid-column-end: span 6;
+        // border: 3px solid purple;
+        // border-radius: 10px;
+        text-align: center;
+      //Diana added this
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-top: -250px;
+    }
+    .summary{
+        width: 100%;
+        padding: 15px;
+    }
+    .summary h3 {
+      text-align: center;
+    }
+}
+
+
+//Code for larger screens
+@media screen and (min-width: $M) {
+
+    /* specific divs */
+    #zen-intro header {
+        grid-column-start: 1;
+        grid-column-end: span 8;
+        // border: 3px solid purple;
+        // border-radius: 10px;
+    }
+  // KITE ICON
+  #zen-intro header::before {
+    content: '';
+    width: 200px;
+    height: 250px;
+    background-image: url("./icons/kite.svg");
+    background-repeat: no-repeat;
+    animation: moveKite 10s ease-in-out infinite;
+    transform-origin: 60% bottom;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+  }
+
+    header h1 {
+        height: 3em;
+        width: 30%;
+        margin: 5% 5% 0% 15%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 40px;
+        // border: 3px solid purple;
+//        color: $color-5;
+        color: transparent;
+
+    }
+
+    header h2 {
+        height: 3em;
+        width: 60%;
+        margin: 0% 5% 5% 30%;
+        display: flex;
+        flex-wrap: wrap;
+        // border: 3px solid purple;
+        border-radius: 15px;
+//        background-color: $color-3;
+//        background-color: hsla(180, 50%, 50%, .3);
+        text-align: center;
+        vertical-align: middle;
+        color: transparent;
+
+    }
+
+    #zen-summary {
+
+        grid-column-start: 3;
+        grid-column-end: span 4;
+        // border: 3px solid purple;
+        // border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+  .summary h3 {
+    text-align: center;
+  }
+}

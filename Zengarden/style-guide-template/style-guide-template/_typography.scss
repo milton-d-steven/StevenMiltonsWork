@@ -1,0 +1,123 @@
+//import fonts
+@import url('https://fonts.googleapis.com/css?family=Original+Surfer|Raleway');
+// fonts
+
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Original Surfer', cursive;
+
+h1, h2 {
+font-family: $secondary-font;
+}
+
+h1 {
+font-size: 2.4rem;
+font-weight: 300;
+line-height: 1.2;
+margin: 0 0 .4em;
+color: $color-5;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+  color: $color-6;
+}
+
+h3 {
+  font-family: $secondary-font;
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: $color-5;
+}
+h2 abbr{
+ font-family: $secondary-font;
+ color: $color-6;   
+ font-size: 3rem;
+}
+
+abbr{
+    text-decoration: none;
+}
+  
+p {
+font-family: $primary-font;
+font-size: 1.4rem;
+line-height: 1.4;
+}
+
+.summary{
+    color: $color-5;
+}
+
+
+//style fot link to download files
+.summary> p>a:link{
+    text-transform: uppercase;
+}
+
+//style for links
+div>p>a:link{
+    color: $color-5;
+}
+div>p>a:hover{
+    color: $color-4;
+    text-decoration: none;
+}
+
+//preamble style
+
+.preamble{
+    color: $color-3;
+    h3{
+        color: $color-3;
+    }
+}
+
+//boxes style
+
+.explanation, .participation, .benefits, .requirements{
+    color: $color-5;
+}
+
+//footer style
+footer{
+    a:link{
+         color: $color-5;
+        font-size: 2rem;
+    }
+    a:hover{
+        color: $color-4;
+        text-decoration:  none;   
+    }
+    a:visited{
+        color: $color-6;
+        text-decoration:  none;   
+    }
+}
+
+//aside style
+aside{
+    color: $color-3;
+    h3{
+        color: $color-3;
+    }
+    li{
+    list-style: none;
+  }  
+}
+
+ul{
+    a:link{
+        color: $color-3;
+    }
+    a:hover{
+        color: $color-4;
+        text-decoration: none;
+    }
+    a:visited{
+        color: $color-6;
+        text-decoration: none;   
+    }
+}

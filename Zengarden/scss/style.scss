@@ -1,0 +1,19 @@
+@import '_color';
+@import '_prefix-mixins';
+@import 'layout'; // responsive grid and media 
+//queries // What is this for? it was giving an error and I commented out.
+@import '_navigation';
+@import '_typography';
+@import '_basic-style';
+@import '_intro'; //top section of site
+@import '_middivs'; //middle section of site
+@import '_sidebar';
+@import '_icons';
+
+
+
+body {
+	/* this is the page background */
+	background-color: transparent;
+   
+}

@@ -1,0 +1,58 @@
+//colors
+$color_marina: #135589;
+$color_starfish: #ff6435;
+$color_californian_coral: #3ddad7;
+$color_bondi_blue: #2a93d5;
+
+.cd-secondary-nav {
+	a {
+		&:link {
+			text-decoration: none;
+			color: $color_starfish;
+		}
+		&:visited {
+			text-decoration: none;
+			color: $color_starfish;
+		}
+		&:hover {
+			text-decoration: underline;
+			color: $color_californian_coral;
+		}
+	}
+	li a:active {
+		text-decoration: underline;
+		color: $color_bondi_blue;
+	}
+}
+.cd-primary-nav a {
+	&:link {
+		text-decoration: none;
+		color: $color_marina;
+	}
+	&:visited {
+		text-decoration: none;
+		color: $color_starfish;
+	}
+	&:hover {
+		text-decoration: underline;
+		color: $color_starfish;
+	}
+	&:active {
+		text-decoration: none;
+		color: $color_marina;
+	}
+}
+.cd-other-nav a {
+	&:link {
+		text-decoration: none;
+	}
+	&:visited {
+		text-decoration: none;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+	&:active {
+		text-decoration: underline;
+	}
+}

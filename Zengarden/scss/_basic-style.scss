@@ -1,0 +1,41 @@
+/* basic elements */
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 75% railway, sans-serif;
+  line-height: 1.88889;
+  color: #555753;
+  margin: 0;
+  padding: 0;
+}
+.page-wrapper {
+  overflow: hidden;
+}
+p {
+  margin-top: 0
+}
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #B7A5DF;
+}
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-5;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: #9685BA;
+}
+abbr {
+  border-bottom: none;
+}
+//Diana added margin, it was too close to the water
+footer a {
+  margin-top: 50px;
+}
