@@ -1,0 +1,47 @@
+body {
+    font-size: 16px;
+    line-height: 12px;
+    font-family: serif;
+    color: black;
+}
+
+h1 {
+    font-size: 24px;
+    margin-left: 1.5rem;
+    color: palevioletred;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #bbb;
+}
+
+ul {
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .25rem;
+    max-width: 500px;
+}
+
+header, footer, footer a {
+    text-align: left;
+    background-color: navy;
+    color: whitesmoke;
+}
+
+header img {
+    width: 140px;
+    height: 185px;
+    float: right;
+}
+
+footer {
+    font-size: 10px;
+}
