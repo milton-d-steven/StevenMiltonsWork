@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="Tri-City Weather Franklin Community Event Forecast Current Conditions">
+    <title>Tri-City Community Storm Center</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&%7c;Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header class="headerbar" >
+      <div class="logo">
+        <img src="images/rainorshinelogo.jpg" alt="Sun partially covered by clouds."/>
+      </div>
+      <div class="subheading">
+        <h1>Tri-City Weather</h1>
+        <h2>Rain or shine for all your weather needs!</h2>
+      </div>
+      <div>
+        <img src="images/weather-report-3340.png" alt="All weather types image"/>
+      </div>
+    </header>
+
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="mainnav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Tri-City Storm Reporting Center</h2>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Reporter Information</legend>
+          <label class="repinfo">Name*<input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required></label>
+          <label class="repinfo">Email<input type="email" name="email" placeholder="johndoe@gmail.com"></label>
+          <label class="repinfo">Telephone*<input type="tel" name="phone" required></label>
+          <label class="repinfo">Zip Code*<input type="number" required></label>
+          <label id="required">* Required field</label>
+        </fieldset>
+        <fieldset>
+          <legend>Storm Incident Report</legend>
+          <label class="reporter">Storm Date<input type="date" name="date"></label>
+          <label class="reporter">Storm Type<input list="stormtypes" placeholder="Select Storm Type..."></label>
+          <datalist id="stormtypes">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+          <label class="reporter">Storm Severity (1 - 10)
+            <span class="severity">
+              <input type="range" id="severity" value="5" min="1" max="10" step="1" list="ticks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+              <datalist id="ticks">
+                <option value="1" label="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5" label="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10" label="10">
+              </datalist>
+              <span id="severityvalue">5</span>
+            </span>
+          </label>
+          <label class="reporter"><span>Storm Region</span>
+            <select name="regions">
+              <option selected disabled>Select Region...</option>
+              <option value="franklin">Franklin</option>
+              <option value="greenville">Greenville</option>
+              <option value="springfield">Springfield</option>
+            </select>
+          </label>
+          <div>
+            <label>Reporter In Danger?</label>
+            <label class="report">Yes<input type="radio" name="danger" value="yes"></label>
+            <label class="report">No<input type="radio" name="danger" value="no"></label>
+            <label class="report">Maybe<input type="radio" name="danger" value="maybe"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Comments</legend>
+          <label>Enter Relevant Information Here<textarea></textarea></label>
+          <input type="submit" value="Send Report" class="submit">
+        </fieldset>
+      </form>
+    </main>
+
+    <section class="contact-info" >
+      <h3>Contact Information</h3>
+      <p>Tri-City Weather</p>
+      <p>1234 Main St, Anytown, FL USA</p>
+      <p>(999)999-9999</p>
+      <p>Weatheremail@email.com</p>
+    </section>
+
+    <footer>
+      <p class="footerbar">
+        &#169;2018 | Tri-City Weather | <span id="contactdate"></span>
+      </p>
+      <p class="siteattrib">Weather data provided by
+        <a href="https://www.openweathermap.org">OpenWeatherMap</a>
+      </p>
+    </footer>
+
+    <script src="scripts/toggleMenu.js"></script>
+    <script src="scripts/severity.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script defer src="scripts/wayfinder.js"></script>
+  </body>
+</html>

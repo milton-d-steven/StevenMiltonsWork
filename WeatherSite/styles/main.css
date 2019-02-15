@@ -1,0 +1,363 @@
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 37.5em) {
+
+  /* Change the color of links on hover */
+
+  nav button {
+    margin: .2rem 2%;
+    background-color: #7cafc4;
+    border: none;
+    font-size:1.6rem;
+    color: #044389;
+  }
+
+  nav {
+    width: 96.8%;
+    margin: auto;
+  }
+
+  nav ul.hide {
+    display: none;
+  }
+}
+
+section.forecast { display: none; }
+
+.assignments {
+  line-height: 1.5rem;
+}
+
+header, nav, main, footer {
+}
+
+.headerbar {
+  margin-top: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header .subheading {
+  text-align: center;
+}
+
+img.logo {
+  height: 60px;
+  float: left;
+  margin: 1em;
+}
+
+main img {
+  width: 95%;
+  height: auto;
+  margin-left: .5em ;
+  margin-right: .3em ;
+}
+main article img {
+  width: 95%;
+  height: auto;
+  border: 0;
+}
+main article p {
+  text-align: left ;
+  margin: 1em;
+}
+
+img.condition {
+  height: 50px;
+  width: auto;
+}
+
+#weatherimage {
+  width: 4rem
+}
+section.contact-info{
+  background-color: #ffad05;
+  color: #044389;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0;
+  margin:.5em;
+  margin-bottom: 0;
+  max-width: 40em;
+}
+
+section.contact-info p{
+  margin: .3em;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #fcff4b;
+  color: #044389;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0;
+  margin: .5em;
+  margin-top: 0;
+}
+
+.footerbar {
+  margin-bottom: .2rem;
+}
+.siteattrib {
+  margin-top: 0;
+  font-size: .6rem;
+}
+
+.stdart {
+  border: 2px solid black;
+  margin: .5rem;
+}
+
+/* Defining the fonts for the different section and types */
+p {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.story {
+  line-height: 21px
+}
+h1 {
+  font-family: "Trebuchet MS",sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 800;
+  line-height: 32px;
+  color: #044389;
+}
+
+h2 {
+  font-family: "Trebuchet MS",sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #044389;
+  text-align: center;
+}
+h2.clear { clear: both; }
+
+h3 {
+  font-family: "Trebuchet MS",sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 22px;
+  color: #044389;
+  text-align: center;
+}
+
+main article {
+  padding: .25rem;
+  text-align: center;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+.flexconditions {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  border: 3px solid #044389;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #7cafc4;
+}
+.flexconditions div{
+  width: 15rem;
+  list-style-type: none;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  line-height: 25px;
+}
+
+.tempcond {
+  font-size: 1rem;
+  line-height: 18px;
+  padding-right: 5px;
+}
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif  /* Declare the base font-family */
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+header img {
+  padding-top:5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  align-items: center;
+  height: 100px;
+}
+header .subheading h2 {
+  font-family: "Trebuchet MS",sans-serif;
+  font-size:16px;
+  font-weight: 600;
+  color: #044389;
+}
+
+nav {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 40px;
+  text-decoration: none;
+  background-color: #ffad05;
+  text-align: center;
+  white-space: nowrap;
+}
+nav a:hover {
+  background-color: #044389;
+  color: white;
+}
+nav ul {
+  list-style-type:none;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
+  justify-content:center;
+  color: #000;
+  text-align: center;
+  padding: .8rem 2%;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #5995ed;
+  color: white;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.photo-gallery {
+  margin: auto;
+  width: 96%;
+  justify-content: center;
+  display: grid;
+  padding: 0;
+  border: 0;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-gap: 20px;
+  border: 1px solid rgb(0,95,107);
+  background-color: #5995ed;
+  color: #fff;
+}
+
+figcaption {
+  font-size: .8rem;
+  padding: 10px;
+  background-color: #ffad05;
+  color: #044389;
+}
+
+#homecond {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+#thanks {
+  padding: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+form {
+  text-align:left;
+  margin: 0 auto;
+  width: 80%;
+
+}
+form legend {
+  background-color: #ffad05;
+}
+
+form fieldset {
+  padding: 1rem .75rem 0rem .75rem;
+  line-height: 1.5rem;
+  background-color: #7cafc4;
+  margin: 10px 0 10px 0;
+}
+form fieldset input{
+  display:block;
+}
+
+form label {
+  display:block;
+  padding: 5px;
+  margin: 10px auto;
+  border: 2px solid #044389;
+}
+
+form textarea {
+  width: 100%;
+  height: 100px;
+  padding-left: 5px;
+}
+form .submit {
+  background-color: #ffad05;
+  width: 10rem;
+  height: 3rem;
+}
+form .severity {
+  display: flex;
+  padding: 5px;
+}
+
+#severity {
+  width: 90%;
+  flex: 0 0 90%;
+  margin-right:10px
+}
+
+form #required {
+  font-size: .7rem;
+}
+
+form .report {
+  line-height: .8;
+  border: none;
+}
+
+form .reporter {
+  display:flex;
+  flex-flow: column wrap;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="Franklin Weather Community Event Page">
+    <title>Tri-City Weather Community Event Forecast </title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&%7c;Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header class="headerbar" >
+      <div class="logo">
+        <img src="images/rainorshinelogo.jpg" alt="Sun partially covered by clouds."/>
+      </div>
+      <div class="subheading">
+        <h1>Tri-City Weather</h1>
+        <h2>Rain or shine for all your weather needs!</h2>
+      </div>
+      <div>
+        <img src="images/weather-report-3340.png" alt="All weather types image"/>
+      </div>
+    </header>
+
+    <nav>
+      <ul id="mainnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="maingrid">
+        <article class="stdart1">
+          <div class="art1">
+            <h3>Title of Some Weather Story</h3>
+            <p class="story">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac tortor suscipit, egestas nisl vitae, finibus lorem. Ut blandit, dui sit amet cursus blandit, est leo iaculis libero, ac varius justo neque at lectus. Donec nec tincidunt velit. Maecenas dignissim quam sit amet magna pretium, et tristique magna elementum. Donec nisi nulla, mollis in augue ut, rutrum placerat diam.
+            </p>
+          </div>
+          <div class="part1">
+            <picture>
+              <img class="img1" src="images/agriculture-clouds-colors-108941.jpg" alt="Rainbow over agriculture field"/>
+            </picture>
+          </div>
+        </article>
+        <section class="stdart2">
+          <div class="art2">
+            <h3>Franklin Weather</h3>
+            <div class="highlow">
+              <div class="flexconditions">
+                <div>
+                  <p class="tempcond"><strong>Motto:</strong><br/> <span id="Franklinmotto">motto</span></p>
+                  <p class="tempcond"><strong>Year Founded:</strong> <span id="Franklinyear">year</span></p>
+                  <p class="tempcond"><strong>Population:</strong> <span id="Franklinpop">population</span></p>
+                  <p class="tempcond"><strong>Annual Rainfall:</strong> <span id="Franklinrain">rainfall</span>"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="part2">
+            <picture>
+              <img class="img2" src="images/wisconsin-peninsula-state-park-large-clouds-over-the-inlet-300x200px.jpg"   alt="Franklin Weather Landscape"/>
+            </picture>
+          </div>
+        </section>
+        <section class="stdart3">
+          <div class="art3">
+            <h3>Greenville Weather</h3>
+            <div class="highlow">
+              <div class="flexconditions">
+                <div>
+                  <p class="tempcond"><strong>Motto:</strong><br/> <span id="Greenvillemotto">motto</span></p>
+                  <p class="tempcond"><strong>Year Founded:</strong> <span id="Greenvilleyear">year</span></p>
+                  <p class="tempcond"><strong>Population:</strong> <span id="Greenvillepop">population</span></p>
+                  <p class="tempcond"><strong>Annual Rainfall:</strong> <span id="Greenvillerain">rainfall</span>"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="part3">
+            <picture>
+              <img class="img3" src="images/greenville300x200.jpg" alt="Greenville Weather Landscape"/>
+            </picture>
+          </div>
+        </section>
+        <section class="stdart4">
+          <div class="art4">
+            <h3>Springfield Weather</h3>
+            <div class="highlow">
+              <div class="flexconditions">
+                <div>
+                  <p class="tempcond"><strong>Motto:</strong><br/> <span id="Springfieldmotto">motto</span></p>
+                  <p class="tempcond"><strong>Year Founded:</strong> <span id="Springfieldyear">year</span></p>
+                  <p class="tempcond"><strong>Population:</strong> <span id="Springfieldpop">population</span></p>
+                  <p class="tempcond"><strong>Annual Rainfall:</strong> <span id="Springfieldrain">rainfall</span>"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="part4">
+            <picture>
+              <img class="img4" src="images/springfield300x200.jpg" alt="Springfield lake in a valley of trees"/>
+            </picture>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="contact-info" >
+      <h3>Contact Information</h3>
+      <p>Tri-City Weather</p>
+      <p>1234 Main St, Anytown, FL USA</p>
+      <p>(999)999-9999</p>
+      <p>Weatheremail@email.com</p>
+    </section>
+
+    <footer>
+      <p class="footerbar">
+        &#169;2018 | Tri-City Weather | <span id="contactdate"></span>
+      </p>
+      <p class="siteattrib">Weather data provided by
+        <a href="https://www.openweathermap.org">OpenWeatherMap</a>
+      </p>
+    </footer>
+
+    <script src="scripts/towndata.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script defer src="scripts/wayfinder.js"></script>
+  </body>
+</html>

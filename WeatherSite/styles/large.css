@@ -1,0 +1,132 @@
+@media only screen and (min-width: 64rem ) {
+
+  nav ul li a {padding: .6rem 1rem; }
+
+  body {
+    margin: 0 auto;
+    max-width: 65rem;
+    text-align: center ;
+  }
+
+  header, nav, main, footer, section.contact-info {
+  }
+
+  img.logo {
+    height: 8rem;
+    float:left;
+  }
+
+  img.condition {
+    height: 75px;
+    padding-right: 20px;
+  }
+
+  main img.banner {
+    width: 95%;
+  }
+  .weather-summary {
+    width: 93.5% ;
+  }
+
+  section.forecast {
+    clear: left;
+    margin-left: auto ;
+    margin-right: auto ;
+  }
+
+  .forecast {
+    padding-top:20px;
+  }
+
+  section.contact-info {clear: right; }
+
+  header .subheading {
+    font-size: 16px;
+    text-align: center ;
+    margin-top: 1.5rem;;
+  }
+  header img {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .rpad {
+    padding-right:25px;
+  }
+
+  nav {
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+  }
+
+  #flexconditions {
+    width:70%;
+  }
+
+  .tempcond {
+    font-size: 1rem;
+  }
+
+  .conddesc {
+    font-size: 22px;
+  }
+  section h3 { text-align: center; }
+
+  .photo-gallery {
+    margin-left: 3.7em;
+    width: 57.7em;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .photo-gallery .fig1:hover{
+    box-shadow: 5px 5px 10px black;
+  }
+  .photo-gallery .fig2:hover{
+    box-shadow: 5px 5px 10px black;
+  }
+  .photo-gallery .fig3:hover{
+    box-shadow: 5px 5px 10px black;
+  }
+  .photo-gallery .fig4:hover{
+    box-shadow: 5px 5px 10px black;
+  }
+  .photo-gallery .fig5:hover{
+    box-shadow: 5px 5px 10px black;
+  }
+  .photo-gallery .fig6:hover{
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #maingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px 500px;
+    margin: auto;
+    width: 96%;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    grid-template-areas:
+      "header header header"
+      "main main main";
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .stdart1 {
+    flex-direction: row;
+    grid-area: header;
+  }
+  .art1 {
+    padding-bottom: 10px;
+  }
+  .stdart2, .stdart3, .stdart4 {
+    flex-direction: column;
+    box-shadow: 3px 5px grey;
+  }
+  .art2, .art3, .art4 {
+    box-shadow: none;
+  }
+}
+

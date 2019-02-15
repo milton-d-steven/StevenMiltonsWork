@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="Springfield Weather Community Event Page">
+    <title>Tri-City Weather Springfield Community Event Forecast Current Conditions</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&%7c;Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header class="headerbar" >
+      <div class="logo">
+        <img src="images/rainorshinelogo.jpg" alt="Sun partially covered by clouds."/>
+      </div>
+      <div class="subheading">
+        <h1>Tri-City Weather</h1>
+        <h2>Rain or shine for all your weather needs!</h2>
+      </div>
+      <div>
+        <img src="images/weather-report-3340.png" alt="All weather types image"/>
+      </div>
+    </header>
+
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="mainnav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="weather-summary">
+        <picture class="banner">
+          <source media="(min-width: 64rem)" srcset="images/springfieldLandscape.jpg">
+          <source media="(min-width: 37.5rem)" srcset="images/springfield2300x200.jpg">
+          <img src="images/springfieldLandscape.jpg"   alt="Springfield Banner Page">
+        </picture>
+        <h2>Springfield</h2>
+        <div class="highlow">
+          <div class="flexconditions">
+            <div>
+              <p class="conddesc"><span id="homecond">Sunny</span>
+                <img src="images/weather-report-3340.png" id="weatherimage" alt="Weather icon"/>
+              </p>
+            </div>
+            <div>
+              <p class="tempcond"><strong>Temperature:</strong>
+                <span id="temp">90</span>&deg;F</p>
+              <p class="tempcond"><strong>Humidity:</strong> <span id="humidity">0</span>&percnt;</p>
+            </div>
+            <div>
+              <p class="tempcond"><strong>Wind:</strong> <span id="wind">5</span> mph <span id="winddir">N</span></p>
+              <p class="tempcond"><strong>Feels Like:</strong> <span id="wchill"></span>&deg;F</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forecast">
+        <h3>Ten Day Forecast</h3>
+        <table class="tenday">
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+        </table>
+      </section>
+
+      <article>
+        <h3>Springfield Weather</h3>
+        <img src="images/springfield300x200.jpg" alt="Mountain Lake"/>
+        <p class="story">
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br/>
+
+          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+      </article>
+    </main>
+
+    <section class="contact-info" >
+      <h3>Contact Information</h3>
+      <p>Tri-City Weather</p>
+      <p>1234 Main St, Anytown, FL USA</p>
+      <p>(999)999-9999</p>
+      <p>Weatheremail@email.com</p>
+    </section>
+
+    <footer>
+      <p class="footerbar">
+        &#169;2018 | Tri-City Weather | <span id="contactdate"></span>
+      </p>
+      <p class="siteattrib">Weather data provided by
+        <a href="https://www.openweathermap.org">OpenWeatherMap</a>
+      </p>
+    </footer>
+
+    <script src="scripts/toggleMenu.js"></script>
+    <script src="scripts/springfieldweather.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script defer src="scripts/wayfinder.js"></script>
+  </body>
+</html>
