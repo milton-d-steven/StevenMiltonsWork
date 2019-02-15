@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Source+Sans+Pro') ;
+#content {
+  width: 960px ;
+  margin: 0 auto ;
+  font-family: 'Source Sans Pro', Arial, sans-serif ;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #1f7a8c ;
+  font-family: "Anton", Arial, sans-serif ;
+  line-height: .2em ;
+  padding-top: 1em ;
+}
+nav {
+  background-color: #4c1212;
+  text-align: right;
+  margin-top: -90px;
+  width:auto;
+}
+nav li {
+  font-size: 1.2em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+nav a {
+  color: #1f7a8c ;
+  line-height: 2em ;
+  text-decoration: none ;
+}
+nav a:link {
+  color: white;
+}
+nav a:visited {
+  color: #bfdbf7;
+}
+nav a:hover {
+  color: #1f7a8c;
+  border-bottom: solid 3px white ;
+}
+nav a:active {
+  color: grey;
+}
+.banner {
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 10px grey;
+  border-style: solid;
+  width: 960px;
+  height: auto;
+}
+main {
+  width: 960px;
+  margin:auto;
+}
+.pspec {
+  color: #022b3a ;
+}
+.ppsec {
+  color: #044389 ;
+}
+.leftcol {
+  width: 45% ;
+  float: left ;
+  padding: 10px ;
+}
+.rightcol {
+  width: 45% ;
+  float: right ;
+  padding: 10px ;
+}
+.leftcol1 {
+  width: 45% ;
+  float: left ;
+}
+.rightcol1 {
+  width: 45% ;
+  float: right ;
+}
+
+#sec1 {
+  padding: 10px ;
+}
+#sec2 {
+  background-color: #bfdbf7 ;
+  padding: 10px ;
+}
+#sec3 {
+  text-align: center ;
+  padding: 50px ;
+
+}
+footer {
+  background-color: #4c1212;
+  color: #1f7a8c ;
+  line-height: 4
+}
+
+footer ul {
+  text-align: right;
+  list-style-type: none;
+  text-decoration: none;
+  float: right;
+}
+
+footer ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.logo-image{
+  position: relative;
+  left: 20px;
+  top: 0px;
+  border: solid 2px #beb7a4;
+  height: 80px;
+  width: auto;
+}
+
+.clearfix::after {
+  content: "" ;
+  clear: both;
+  display: table;
+}
+
+.contact-info{
+  background-color: #7cafc45;
+  color: #044389;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  padding: 0;
+  margin:0;
+  margin-bottom: 0;
+  line-height: 0rem;
+}
+
+form {
+  text-align:left;
+  margin: 0 auto;
+  width: 80%;
+
+}
+form legend {
+  background-color: #ffad05;
+}
+
+form fieldset {
+  padding: 1rem .75rem 0rem .75rem;
+  line-height: 1.5rem;
+  background-color: #7cafc4;
+  margin: 10px 0 10px 0;
+}
+form fieldset input{
+  display:block;
+}
+
+form label {
+  display:block;
+  padding: 5px;
+  margin: 10px auto;
+  border: 2px solid #044389;
+}
+
+form .submit {
+  background-color: #ffad05;
+  width: 10rem;
+  height: 3rem;
+}
+form #required {
+  font-size: .7rem;
+}
+
+#tourguides {
+  width: 480px;
+}
+
+#thanks {
+  color: #044389 ;
+  padding: 40px 40px 10px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#thanksheader {
+  padding-left: 40px;
+}
+
+.italics {
+  font-style: italic;
+  font-size: 1rem;
+  padding-top: 5rem
+}
